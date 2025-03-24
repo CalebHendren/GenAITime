@@ -1,7 +1,7 @@
 import csv
 from diophila import OpenAlex
 
-email = "shx983@mocs.utc.edu"
+email = "YOUR EMAIL HERE"
 openalex = OpenAlex(email)
 
 biology_keywords = [
