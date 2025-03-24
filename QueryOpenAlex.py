@@ -34,7 +34,7 @@ with open(output_file, mode="w", newline="", encoding="utf-8") as file:
         for ai_kw in generative_ai_keywords:
             search_query = f'"{bio_kw}" "{ai_kw}"'
             filters = {
-                "from_publication_date": "2015-01-01"
+                "from_publication_date": "2015-01-01" # REMOVES ANYTHING FROM BEFORE 2015. REMOVE OR EDIT THIS IF YOU DON'T WANT THAT.
             }
 
             works = openalex.get_list_of_works(search=search_query, filters=filters)
